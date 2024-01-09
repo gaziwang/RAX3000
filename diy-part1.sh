@@ -18,4 +18,6 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 git clone https://github.com/EOYOHOO/rkp-ipid.git package/rkp-ipid
 git clone https://github.com/Zxilly/UA2F.git package/UA2F
+git clone https://github.com/lucikap/luci-app-ua2f.git package/luci-app-ua2f
+git clone https://github.com/sbwml/luci-app-mentohust.git package/luci-app-mentohust
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
