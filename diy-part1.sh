@@ -16,3 +16,12 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+./scripts/feeds update -a
+git clone https://github.com/EOYOHOO/rkp-ipid.git package/rkp-ipid
+git clone https://github.com/Zxilly/UA2F.git package/UA2F
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
+git clone https://github.com/lucikap/luci-app-ua2f.git package/luci-app-ua2f
+./scripts/feeds update -a
+rm -rf /feeds/luci/applications/luci-app-unblockneteasemusic
+rm -rf /package/feeds/luci/luci-app-unblockneteasemusic
+
